@@ -1,0 +1,18 @@
+
+javac -d out -cp "lib\javafx-sdk-21.0.1\lib\*" Java_\*.java
+
+jar cfe LauncherLop.jar Java_.LauncherLop -C out .
+
+jar uf LauncherLop.jar -C "C:\Program Files\Java\javafx-sdk-21.0.1\lib" .
+
+//insertar todas las carpetas que falten al .jar manualmente usando winrar las carpetas serían Icons, lib, PrefAppIcons, CSS_, FXML_
+
+java --module-path "C:\Program Files\Java\javafx-sdk-21.0.1\lib" --add-modules javafx.controls,javafx.fxml -jar LauncherLop.jar
+
+//con el comando anterior me aseguro de que todo funciona correctamente
+
+java --module-path "lib\javafx-sdk-21.0.1\lib" --add-modules javafx.controls,javafx.fxml -jar LauncherLop.jar
+
+//asegurarse que el .jar va siempre acompañado con la carpeta lib, Icons, PrefAppIcons en la misma carpeta que el .jar
+
+

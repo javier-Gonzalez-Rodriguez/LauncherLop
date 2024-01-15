@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="fondo" onMouseClicked="#addIcon" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="30.0" prefWidth="30.0" styleClass="fondo_icono_gaming" stylesheets="@../CSS_/principal.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Java_.Plus_accesController">
+   <center>
+      <ImageView id="add_icon" fx:id="add" fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../Icons/plus.png" />
+         </image>
+      </ImageView>
+   </center>
+   <bottom>
+      <Label fx:id="Lnombre" alignment="CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="85.0" styleClass="label-gaming" stylesheets="@../CSS_/principal.css" text="icono" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Roboto Bold" size="12.0" />
+         </font></Label>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,119 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.fondo_cabecera{
+    -fx-background-color: linear-gradient(to bottom, #2196f3, #1565c0); /* Gradiente para un fondo con sensación de profundidad */
+    -fx-border-color: #0d47a1; /* Color del borde */
+    -fx-border-width: 2px; /* Ancho del borde */
+    -fx-border-radius: 10 10 0 0; /* Bordes redondeados para el borde */
+    -fx-background-radius: 10 10 0 0;
+}
+
+.borde{
+    -fx-background-radius: 10 10 0 0;
+}
+
+
+.fondo_buscador {
+    -fx-background-color: linear-gradient(to bottom, #1F1F1F, #3498db); /* Degradado vertical desde oscuro a azul */
+}
+
+/* Estilo del TextField */
+.text-field_buscador {
+    -fx-text-fill: #000000;  /*Color del texto */
+    -fx-font-size: 14px; /* Tamaño de la fuente */
+    -fx-font-family: "Open Sans";
+    -fx-padding: 8px; /* Relleno interno */
+    -fx-background-radius: 5px; /* Bordes redondeados */
+    -fx-border-color: #5C5C5C; /* Color del borde */
+    -fx-border-width: 2px; /* Ancho del borde */
+    -fx-border-radius: 13px; /*bordes redondeados*/
+    -fx-background-radius: 13px; /*fondo redondeado como los bordes*/
+}
+
+/* Estilo del Label */
+.label_buscador {
+    -fx-text-fill: #FFFFFF; /* Color del texto del Label */
+    -fx-font-size: 18px; /* Tamaño de la fuente */
+    -fx-font-weight: bold; /* Texto en negrita */
+    -fx-font-family: "Impact", sans-serif; /* Tipo de fuente */
+    -fx-padding: 5px; /* Relleno interno */
+}
+
+.label-gaming {
+    -fx-font-size: 10px;
+    -fx-text-fill: #00ff00; /* Color del texto (verde en este caso) */
+    -fx-padding: 10px;
+}
+
+.fondo_icono_gaming {
+    /*-fx-background-color: #000000;  Color de fondo (negro en este caso) */
+    -fx-border-color: #00ff00; /* Color del borde (verde en este caso) */
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(three-pass-box, #00ff00, 5, 0, 0, 0); /* Efecto de sombra */
+    -fx-border-radius: 5 5 5 5; /* Bordes redondeados para el borde */
+    -fx-background-radius: 5 5 5 5;
+}
+
+.fondo_icono_gaming_hover {
+    -fx-background-color: #45454580;  /*Color de fondo (negro en este caso) */
+    -fx-border-color: #00ff00; /* Color del borde (verde en este caso) */
+    -fx-border-width: 4px;
+    -fx-effect: dropshadow(three-pass-box, #00ff00, 5, 0, 0, 0); /* Efecto de sombra */
+    -fx-border-radius: 5 5 5 5; /* Bordes redondeados para el borde */
+    -fx-background-radius: 5 5 5 5;
+}
+
+/*
+*
+* AJUSTES CSS
+*
+*/
+
+/* Estilo para el contenedor principal */
+.settings-container {
+    -fx-background-color: #f0f0f0; /* Color de fondo */
+    -fx-padding: 20; /* Margen interior */
+}
+
+/* Estilo para el label */
+.settings-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Color del texto */
+    -fx-padding: 5 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo para el TextField */
+.settings-textfield {
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px; /* Ancho preferido */
+    -fx-padding: 5; /* Espaciado interno */
+}
+
+/* Estilo para el Button */
+.settings-button {
+    -fx-font-size: 14px;
+    -fx-padding: 8 15; /* Espaciado interno en vertical y horizontal */
+    -fx-background-color: #4CAF50; /* Color de fondo del botón */
+    -fx-text-fill: white; /* Color del texto del botón */
+    -fx-border-radius: 5; /* Radio de los bordes */
+    -fx-cursor: hand; /* Cursor al pasar el ratón */
+}
+
+.seleccionable {
+    -fx-cursor: hand; /* Cursor al pasar el ratón */
+}
+
+/* Estilo para el Button cuando se presiona */
+.settings-button:pressed {
+    -fx-background-color: #45a049; /* Color de fondo al presionar */
+}
+
+/* Estilo de tarjeta para el BorderPane */
+.border-pane-card {
+    -fx-border-color: #3498db; /* Color del borde resaltado */
+    -fx-border-width: 2px; /* Ancho del borde resaltado */
+    -fx-border-radius: 5px; /* Radio del borde para esquinas redondeadas */
+}

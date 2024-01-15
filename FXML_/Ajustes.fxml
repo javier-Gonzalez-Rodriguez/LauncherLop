@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="ventana" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="577.0" styleClass="borde" stylesheets="@../CSS_/principal.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Java_.AjustesController">
+   <top>
+      <BorderPane fx:id="toolbar_ajustes" prefHeight="30.0" prefWidth="600.0" styleClass="fondo_cabecera" stylesheets="@../CSS_/principal.css" BorderPane.alignment="CENTER">
+         <center>
+            <Label prefHeight="111.0" prefWidth="541.0" stylesheets="@../CSS_/principal.css" text="Ajustes" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="21.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+         </center>
+         <right>
+            <HBox prefHeight="60.0" prefWidth="25.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="cerrar" fitHeight="60.0" fitWidth="76.0" onMouseClicked="#cerrar" onMouseEntered="#cerrarHover" onMouseExited="#cerrarNotHover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/cerrar-icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </right>
+      </BorderPane>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../CSS_/principal.css" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox fx:id="vBox" prefHeight="400.0" prefWidth="556.0" spacing="5.0" />
+               </content>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </ScrollPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="47.0" prefWidth="577.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="221.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#guardarCambios" styleClass="settings-button" stylesheets="@../CSS_/principal.css" text="Guardar cambios" />
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>
